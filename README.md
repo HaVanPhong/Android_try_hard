@@ -1,2 +1,2 @@
-# Android_try_hard
+# Android
 Hello các chị em :v
