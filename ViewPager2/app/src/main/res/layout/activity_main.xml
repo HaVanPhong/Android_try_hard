@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textColor="@color/teal_200"
+            android:textSize="30dp" />
+
+        <RadioGroup
+            android:id="@+id/rdbGr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbLeftToRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Left to Right"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rdbRightToLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right To Left"
+                android:textColor="@color/teal_200" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orientation"
+            android:textColor="@color/teal_200"
+            android:textSize="30dp" />
+
+        <RadioGroup
+            android:id="@+id/rdbGr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Vertical"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rdbHoriantal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horiantal"
+                android:textColor="@color/teal_200" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page Transformer"
+            android:textColor="@color/teal_200"
+            android:textSize="30dp" />
+
+        <RadioGroup
+            android:id="@+id/rdbGr3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Normal"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rdbZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom Out"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rdbDepth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Depth"
+                android:textColor="@color/teal_200" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
