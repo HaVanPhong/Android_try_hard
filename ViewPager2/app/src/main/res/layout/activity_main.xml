@@ -81,6 +81,13 @@
                 android:text="Horiantal"
                 android:textColor="@color/teal_200" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/fabAdd"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_baseline_add_24" />
+
         </RadioGroup>
 
     </LinearLayout>

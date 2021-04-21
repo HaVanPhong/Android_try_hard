@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.viewpager2">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +17,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        <activity android:name=".TestBroadCastActivity">-->
+
+<!--        </activity>-->
+<!--        chế độ máy bay-->
+<!--        <receiver android:name=".BroadCast">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.AIRPLANE_MODE"/>-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+<!--        //wifi-->
+        <receiver android:name=".BroadCast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+<!--        <receiver android:name=".BroadCast">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="test.BroadCast"/>-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+
+        
     </application>
 
 </manifest>
